@@ -9,7 +9,7 @@ export default function CountPage() {
       <p>The same Counter component used twice, with different props.</p>
       <div className="counters">
         <Counter label="Counts by 1" incrementBy={1} maxCount={10} />
-        <Counter label="Counts by 5" incrementBy={2} maxCount={10} />
+        <Counter label="Counts by 2" incrementBy={2} maxCount={10} />
       </div>
     </section>
   );
