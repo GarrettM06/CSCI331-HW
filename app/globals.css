@@ -1,0 +1,59 @@
+:root {
+  --bg: #f7f7f8;
+  --fg: #1d1d1f;
+  --muted: #6b6b73;
+  --card: #ffffff;
+  --border: #dcdce0;
+  --accent: #2563eb;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214;
+    --fg: #ececf0;
+    --muted: #a0a0aa;
+    --card: #1c1c20;
+    --border: #33333a;
+    --accent: #6ea0ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.5;
+}
+a { color: var(--accent); }
+main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+.site-header {
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
+  padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--card);
+}
+.site-header nav { display: flex; gap: 16px; }
+.site-header a { text-decoration: none; }
+.brand { font-weight: 700; color: var(--fg) !important; }
+.site-footer { text-align: center; color: var(--muted); padding: 24px 16px; }
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px;
+}
+.counters { display: flex; flex-wrap: wrap; gap: 16px; }
+.counter { flex: 1 1 220px; text-align: center; }
+.counter h2 { margin: 0; font-size: 1.1rem; }
+.count { font-size: 3rem; font-weight: 700; margin: 8px 0; font-variant-numeric: tabular-nums; }
+.buttons { display: flex; gap: 8px; justify-content: center; }
+button {
+  font: inherit; padding: 6px 14px; border-radius: 6px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--bg); color: var(--fg);
+}
+button:hover { border-color: var(--accent); }
+.search-bar input {
+  width: 100%; font: inherit; padding: 10px 12px; margin-bottom: 16px;
+  border: 1px solid var(--border); border-radius: 8px; background: var(--card); color: var(--fg);
+}
+.product-table { width: 100%; border-collapse: collapse; background: var(--card); }
+.product-table th, .product-table td {
+  border-bottom: 1px solid var(--border); padding: 8px; text-align: left; vertical-align: middle;
+}
+.product-table img { object-fit: contain; background: #fff; border-radius: 4px; }
+.price { text-align: right; white-space: nowrap; }
