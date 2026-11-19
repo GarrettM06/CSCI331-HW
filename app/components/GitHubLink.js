@@ -1,6 +1,5 @@
 import { GITHUB_REPO_URL } from "../siteConfig";
 
-// TODO: replace the two bracketed parts with your own final project idea.
 export default function GitHubLink() {
   return (
     <p className="card">
