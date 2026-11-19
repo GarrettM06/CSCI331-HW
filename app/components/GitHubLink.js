@@ -8,7 +8,6 @@ export default function GitHubLink() {
       I&apos;d like the project to be able to convert music on youtube playlists to mp3's so I can download them and listen to them anywhere.
       The code for this site is in my public GitHub repo: {"oogwaysprophecy732/331Project_Group10"}
       <a href={"https://github.com/oogwaysprophecy732/331Project_Group10"} target="_blank" rel="noopener noreferrer">
-        https://github.com/oogwaysprophecy732/331Project_Group10
       </a>.
     </p>
   );
